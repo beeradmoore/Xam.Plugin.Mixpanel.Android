@@ -10,7 +10,3 @@ pushd JavaDocs
 jar xf mixpanel-android-javadoc.jar
 rm -f mixpanel-android-javadoc.jar
 popd
-
-#unzip -f mixpanel-android-javadoc.jar -d JavaDocs/
-#rm -f mixpanel-android-javadoc.jar
-#mixpanel-android-5.6.0.aar
