@@ -7,3 +7,4 @@ Binding/Mixpanel.framework
 Binding/NewBinding_*
 *.nupkg
 Binding/JavaDocs
+Binding/Jars
