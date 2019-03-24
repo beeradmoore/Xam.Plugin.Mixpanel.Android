@@ -1,0 +1,4 @@
+#!/bin/sh
+
+msbuild Xam.Plugin.Mixpanel.Android.csproj -property:Configuration=Release -target:Clean,Build
+nuget pack Xam.Plugin.Mixpanel.Android.csproj -Properties Configuration=Release

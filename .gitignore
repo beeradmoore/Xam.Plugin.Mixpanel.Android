@@ -1,0 +1,9 @@
+.mfractor
+.vs/
+bin/
+obj/
+Cartfile.resolved
+Binding/Mixpanel.framework
+Binding/NewBinding_*
+*.nupkg
+Binding/JavaDocs

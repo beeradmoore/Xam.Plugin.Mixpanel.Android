@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Xam.Plugin.Mixpanel.Android</id>
+        <version>1.0.0</version>
+        <description>Mixpanel bindings for Xamarin.Android</description>
+        <authors>FourPi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <!--<license type="file">LICENSE</license>-->
+        <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
+        <licenseUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android/blob/master/LICENSE</licenseUrl>
+    </metadata>
+    <!--
+    <files>
+        <file src="..\LICENSE" target="" />
+    </files>
+    -->
+</package>
