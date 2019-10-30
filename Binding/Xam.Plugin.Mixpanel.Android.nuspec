@@ -2,14 +2,21 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Xam.Plugin.Mixpanel.Android</id>
-        <version>1.0.1</version>
+        <version>5.6.5</version>
         <description>Xamarin.Android bindings for Mixpanel.</description>
         <authors>FourPi</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <!--<license type="file">LICENSE</license>-->
         <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
         <licenseUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android/blob/master/LICENSE</licenseUrl>
+
+        <dependencies>
+            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="22.1.1" />
+        </dependencies>
     </metadata>
+    <files>
+        <file src="bin\Release\*.dll" target="lib\MonoAndroid10" />
+    </files>
     <!--
     <files>
         <file src="..\LICENSE" target="" />
