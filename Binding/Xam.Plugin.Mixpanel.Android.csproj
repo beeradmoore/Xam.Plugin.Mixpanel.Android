@@ -71,6 +71,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <NuspecFile>Xam.Plugin.Mixpanel.iOS.nuspec</NuspecFile>
+    <NuspecFile>Xam.Plugin.Mixpanel.Android.nuspec</NuspecFile>
   </PropertyGroup>
 </Project>
