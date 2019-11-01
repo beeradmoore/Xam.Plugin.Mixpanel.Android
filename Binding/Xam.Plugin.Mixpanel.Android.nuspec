@@ -6,13 +6,10 @@
         <description>Xamarin.Android bindings for Mixpanel.</description>
         <authors>FourPi</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <!--<license type="file">LICENSE</license>-->
+        <license type="file">LICENSE</license>
         <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
-        <licenseUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android/blob/master/LICENSE</licenseUrl>
     </metadata>
-    <!--
     <files>
-        <file src="..\LICENSE" target="" />
+        <file src="..\LICENSE" />
     </files>
-    -->
 </package>
