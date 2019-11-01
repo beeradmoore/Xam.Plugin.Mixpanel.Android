@@ -9,10 +9,6 @@
         <!--<license type="file">LICENSE</license>-->
         <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
         <licenseUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android/blob/master/LICENSE</licenseUrl>
-
-        <dependencies>
-            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="22.1.1" />
-        </dependencies>
     </metadata>
     <files>
         <file src="bin\Release\*.dll" target="lib\MonoAndroid10" />
