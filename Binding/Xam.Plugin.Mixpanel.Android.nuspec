@@ -10,9 +10,6 @@
         <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
         <licenseUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android/blob/master/LICENSE</licenseUrl>
     </metadata>
-    <files>
-        <file src="bin\Release\*.dll" target="lib\MonoAndroid10" />
-    </files>
     <!--
     <files>
         <file src="..\LICENSE" target="" />
