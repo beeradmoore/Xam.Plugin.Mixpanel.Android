@@ -47,5 +47,7 @@ To update the Mixpanel SDK change the MIXPANEL_VERSION variable within FetchJars
 
 ## TODO
 * Try figure out how to reduce the number of warnings.
+* Figure out why the class MixpanelFCMMessagingService is missing.
+* Figure out how to get JavaDocs to work correctly. Should we include the relevant jars (already downloading with FetchJars.sh) with JavaDocJar and JavaSourceJar in the csproj. Should we continue using the JavaDocs folder like we currently do.
 
 Pull requests welcome!
