@@ -19,6 +19,10 @@ using Xam.Plugin.Mixpanel.Android;
 
 And then follow the docs provided at the Mixpanel Developer Documentation (https://developer.mixpanel.com/docs/android)
 
+## Breaking Changes
+### v5.6.5
+The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plugin.Mixpanel.Android.MPMetrics. 
+
 ## Build
 
 ### Visutal Studio for Mac
