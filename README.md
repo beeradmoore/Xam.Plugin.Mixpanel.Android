@@ -34,11 +34,11 @@ The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plug
 3. Build and fetch your .dlls from the bin/ directory.
 
 ### Building a .nupkg
-1. Run FetchJars.sh
+1. Run BuildNugetPackage.sh
     ``` sh
-    $ ./FetchJars.sh
+    $ ./BuildNugetPackage.sh
     ```
-2. Fetch your Xam.Plugin.Mixpanel.Android.x.y.z.nupkg from the Binding directory.
+2. Fetch your Xam.Plugin.Mixpanel.Android.x.y.z.nupkg and Xam.Plugin.Mixpanel.Android.x.y.z.snupkg from the Binding directory.
 
 ### Adding JavaDocs
 FetchJars.sh will download the .aar file and .javadoc.jar files from [Maven](https://search.maven.org/search?q=a:mixpanel-android) and place/extract them in the suitable folders.
