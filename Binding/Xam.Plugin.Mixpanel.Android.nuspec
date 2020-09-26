@@ -9,8 +9,13 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <license type="file">LICENSE</license>
         <projectUrl>https://github.com/beeradmoore/Xam.Plugin.Mixpanel.Android</projectUrl>
+        <dependencies>
+            <group targetFramework="MonoAndroid10" />
+        </dependencies>
     </metadata>
     <files>
         <file src="..\LICENSE" />
+        <file src="bin/Release/Xam.Plugin.Mixpanel.Android.dll" target="lib\MonoAndroid10\Xam.Plugin.Mixpanel.Android.dll" />
+        <file src="bin/Release/Xam.Plugin.Mixpanel.Android.pdb" target="lib\MonoAndroid10\Xam.Plugin.Mixpanel.Android.pdb" />
     </files>
 </package>
