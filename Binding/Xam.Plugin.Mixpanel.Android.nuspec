@@ -4,6 +4,7 @@
         <id>Xam.Plugin.Mixpanel.Android</id>
         <version>5.7.0</version>
         <description>Xamarin.Android bindings for Mixpanel.</description>
+        <tags>mixpanel, xamarin, xamarin.android, android</tags>
         <authors>beeradmoore</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <license type="file">LICENSE</license>
