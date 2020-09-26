@@ -4,10 +4,10 @@
         <id>Xam.Plugin.Mixpanel.Android</id>
         <version>5.7.0</version>
         <description>Xamarin.Android bindings for Mixpanel.</description>
-        <authors>FourPi</authors>
+        <authors>beeradmoore</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <license type="file">LICENSE</license>
-        <projectUrl>https://github.com/FourPi/Xam.Plugin.Mixpanel.Android</projectUrl>
+        <projectUrl>https://github.com/beeradmoore/Xam.Plugin.Mixpanel.Android</projectUrl>
     </metadata>
     <files>
         <file src="..\LICENSE" />
