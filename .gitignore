@@ -8,3 +8,4 @@ Binding/NewBinding_*
 *.nupkg
 Binding/JavaDocs
 Binding/Jars
+*.snupkg
