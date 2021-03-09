@@ -9,3 +9,4 @@ Binding/NewBinding_*
 Binding/JavaDocs
 Binding/Jars
 *.snupkg
+.DS_Store
