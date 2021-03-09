@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v5.8.6.
+Xamarin.Android bindings for Mixpanel Android v5.8.7.
 
 
 ## Installation
@@ -20,7 +20,7 @@ using Xam.Plugin.Mixpanel.Android;
 And then follow the docs provided at the Mixpanel Developer Documentation (https://developer.mixpanel.com/docs/android)
 
 ## Breaking Changes
-### v5.6.5
+### v5.8.7
 The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plugin.Mixpanel.Android.MPMetrics. 
 
 ## Build
