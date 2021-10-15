@@ -1,0 +1,43 @@
+name: Build and release nuget package
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set default Xamarin SDK versions
+      run: |
+        $VM_ASSETS/select-xamarin-sdk-v2.sh --mono=6.12 --android=11.2
+
+    - name: Setup .NET Core SDK 5.0.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x'
+
+    - name: Install dependencies
+      run: nuget restore Binding/Xam.Plugin.Mixpanel.Android.sln
+
+    - name: Build
+      run: |
+        cd Binding/
+        bash BuildNugetPackage.sh
+    
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        files: |
+          Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
+          Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
+          
+    - name: Upload nuget
+      run: |
+        cd Binding/
+        nuget SetApiKey "${{ secrets.TEST_API_SECRET }}"
+        nuget push *.nupkg
+        nuget push MyPackage.snupkg
