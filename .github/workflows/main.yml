@@ -29,4 +29,6 @@ jobs:
       run: nuget restore Binding/Xam.Plugin.Mixpanel.Android.sln
 
     - name: Build
-      run: ./Binding/BuildNugetPackage.sh
+      run: 
+        cd Binding/
+        bash BuildNugetPackage.sh
