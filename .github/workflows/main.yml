@@ -1,4 +1,4 @@
-name: Build nuget package
+name: Build and release nuget package
 
 on: [workflow_dispatch]
 
@@ -38,6 +38,6 @@ jobs:
     - name: Upload nuget
       run: |
         cd Binding/
-        nuget SetApiKey TestConsoleOutput
+        nuget SetApiKey "${{ secrets.TEST_API_SECRET }}"
         nuget push *.nupkg
         nuget push MyPackage.snupkg
