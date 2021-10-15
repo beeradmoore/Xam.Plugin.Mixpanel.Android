@@ -1,9 +1,11 @@
 name: Build and release nuget package
 
-on:
-  push:
-    tags:
-      - "v*"
+on: workflow_dispatch
+
+#on:
+#  push:
+#    tags:
+#      - "v*"
       
 jobs:
   build:
@@ -29,16 +31,15 @@ jobs:
         cd Binding/
         bash BuildNugetPackage.sh
     
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        files: |
-          Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
-          Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
+    #- uses: "marvinpinto/action-automatic-releases@latest"
+    #  with:
+    #    repo_token: "${{ secrets.GITHUB_TOKEN }}"
+    #    files: |
+    #      Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
+    #      Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
           
     - name: Upload nuget
       run: |
         cd Binding/
         nuget SetApiKey "${{ secrets.NUGET_API_KEY }}"
-        nuget push *.nupkg
-        nuget push *.snupkg
+        nuget push *.nupkg -Source https://api.nuget.org/v3/index.json 
