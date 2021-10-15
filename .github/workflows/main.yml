@@ -35,3 +35,9 @@ jobs:
           Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
           Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
           
+    - name: Upload nuget
+      run: |
+        cd Binding/
+        nuget SetApiKey TestConsoleOutput
+        nuget push *.nupkg
+        nuget push MyPackage.snupkg
