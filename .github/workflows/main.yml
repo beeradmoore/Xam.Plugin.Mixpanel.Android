@@ -9,13 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Check mono versions
-      run: ls -la /Library/Frameworks/Mono.framework/Versions/
-      
-    - name: Check xamarin.android versions
-      run: ls -la /Library/Frameworks/Xamarin.Android.framework/Versions/
-      
     - name: Set default Xamarin SDK versions
       run: |
         $VM_ASSETS/select-xamarin-sdk-v2.sh --mono=6.12 --android=11.2
