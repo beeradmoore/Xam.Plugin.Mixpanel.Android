@@ -32,5 +32,6 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: true
         files: |
-          *.nupkg
-          *.snupkg
+          Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
+          Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
+          
