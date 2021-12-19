@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MIXPANEL_VERSION=5.9.1
+MIXPANEL_VERSION=5.9.4
 
 rm -f  Jars/mixpanel-android.aar 
 rm -f  Jars/mixpanel-android-javadoc.jar 

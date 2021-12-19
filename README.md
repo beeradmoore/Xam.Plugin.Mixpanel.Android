@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v5.9.1.
+Xamarin.Android bindings for Mixpanel Android v5.9.4.
 
 
 ## Installation
@@ -21,7 +21,11 @@ And then follow the docs provided at the Mixpanel Developer Documentation (https
 
 ## Breaking Changes
 ### v5.6.5
-The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plugin.Mixpanel.Android.MPMetrics. 
+The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plugin.Mixpanel.Android.MPMetrics.
+
+## Missing Builds
+### 5.9.2 + 5.9.3
+These builds are not present in this repo or on nuget as they would [crash](https://github.com/mixpanel/mixpanel-android/search?q=Lorg%2Fjacoco%2Fagent%2Frt%2Finternal_8ff85ea%2FOffline&type=issues) on launch. This was resolved in 5.9.4.
 
 ## Build
 
