@@ -20,11 +20,6 @@
     <NoWarn>CS0109</NoWarn>
     <JavaOptions></JavaOptions>
     <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSdkBuildToolsVersion>30.0.3</AndroidSdkBuildToolsVersion>
-    <AndroidCommandLineToolsVersion>5.0</AndroidCommandLineToolsVersion>
-    <AndroidSdkPlatformToolsVersion>31.0.3</AndroidSdkPlatformToolsVersion>
-    <AndroidSdkPlatformVersion>android-31</AndroidSdkPlatformVersion>
-    <AndroidNdkVersion>22.1.7171670</AndroidNdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
