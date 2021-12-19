@@ -21,6 +21,7 @@ jobs:
         ls -la /Library/Frameworks/Xamarin.Android.framework/Versions
         echo "/Library/Frameworks/Xamarin.Mac.framework/Versions"
         ls -la /Library/Frameworks/Xamarin.Mac.framework/Versions
+        mono --version
 
     - name: Setup .NET Core SDK 5.0.x
       uses: actions/setup-dotnet@v1
