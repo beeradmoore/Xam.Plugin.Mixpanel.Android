@@ -11,17 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set default Xamarin SDK versions
       run: |
-        cat $VM_ASSETS/select-xamarin-sdk-v2.sh
-        $VM_ASSETS/select-xamarin-sdk-v2.sh --mono=6.12.11 --android=12.0
-        echo "/Library/Frameworks/Mono.framework/Versions"
-        ls -la /Library/Frameworks/Mono.framework/Versions
-        echo "/Library/Frameworks/Xamarin.iOS.framework/Versions"
-        ls -la /Library/Frameworks/Xamarin.iOS.framework/Versions
-        echo "/Library/Frameworks/Xamarin.Android.framework/Versions"
-        ls -la /Library/Frameworks/Xamarin.Android.framework/Versions
-        echo "/Library/Frameworks/Xamarin.Mac.framework/Versions"
-        ls -la /Library/Frameworks/Xamarin.Mac.framework/Versions
-        mono --version
+        $VM_ASSETS/select-xamarin-sdk-v2.sh --android=12.0
 
     - name: Setup .NET Core SDK 5.0.x
       uses: actions/setup-dotnet@v1
@@ -36,12 +26,19 @@ jobs:
         cd Binding/
         bash BuildNugetPackage.sh
     
-    - uses: "marvinpinto/action-automatic-releases@latest"
+    - uses: actions/upload-artifact@v2
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        files: |
-          Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
-          Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
+          name: nuget packages
+          path: |
+            Binding/*.nupkg
+            Binding/*.snupkg
+
+    #- uses: "marvinpinto/action-automatic-releases@latest"
+    #  with:
+    #    repo_token: "${{ secrets.GITHUB_TOKEN }}"
+    #    files: |
+    #      Binding/Xam.Plugin.Mixpanel.Android.*.nupkg
+    #      Binding/Xam.Plugin.Mixpanel.Android.*.snupkg
           
     #- name: Upload nuget
     #  run: |
