@@ -108,7 +108,7 @@
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.4" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xam.Plugin.Mixpanel.Android">
-      <Version>5.9.4</Version>
+      <Version>5.9.5</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
