@@ -12,7 +12,10 @@ jobs:
     - name: Set default Xamarin SDK versions
       run: |
         $VM_ASSETS/select-xamarin-sdk-v2.sh --android=12.0
-
+    
+    - name: Update ndk location
+      run: ln -sfn /Users/runner/Library/Android/sdk/ndk/22.1.7171670 /Users/runner/Library/Android/sdk/ndk-bundle
+    
     - name: Setup .NET Core SDK 5.0.x
       uses: actions/setup-dotnet@v1
       with:
