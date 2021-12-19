@@ -13,6 +13,14 @@ jobs:
       run: |
         cat $VM_ASSETS/select-xamarin-sdk-v2.sh
         $VM_ASSETS/select-xamarin-sdk-v2.sh --mono=6.12 --android=12.0
+        echo "/Library/Frameworks/Mono.framework/Versions"
+        ls -la /Library/Frameworks/Mono.framework/Versions
+        echo "/Library/Frameworks/Xamarin.iOS.framework/Versions"
+        ls -la /Library/Frameworks/Xamarin.iOS.framework/Versions
+        echo "/Library/Frameworks/Xamarin.Android.framework/Versions"
+        ls -la /Library/Frameworks/Xamarin.Android.framework/Versions
+        echo "/Library/Frameworks/Xamarin.Mac.framework/Versions"
+        ls -la /Library/Frameworks/Xamarin.Mac.framework/Versions
 
     - name: Setup .NET Core SDK 5.0.x
       uses: actions/setup-dotnet@v1
