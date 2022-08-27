@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v6.5.2.
+Xamarin.Android bindings for Mixpanel Android v7.0.0.
 
 
 ## Installation

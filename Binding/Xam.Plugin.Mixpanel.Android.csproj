@@ -62,15 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\mixpanel-android.aar" />
-  </ItemGroup>
-  <!--
-  <ItemGroup>
-    <JavaDocJar Include="Jars\mixpanel-android-javadoc.jar" />
-  </ItemGroup>
-  <ItemGroup>
+    <!--<JavaDocJar Include="Jars\mixpanel-android-javadoc.jar" />-->
     <JavaSourceJar Include="Jars\mixpanel-android-sources.jar" />
   </ItemGroup>
-  -->
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
