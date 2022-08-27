@@ -29,7 +29,7 @@ namespace ExampleProject
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"Mixpanel version: {MixpanelAPI.Version}");
             
-            var mixpanel = MixpanelAPI.GetInstance(this, "YOUR_TOKEN");
+            var mixpanel = MixpanelAPI.GetInstance(this, "YOUR_TOKEN", true);
 
             stringBuilder.AppendLine("Device info:");
             foreach (var deviceInfo in mixpanel.DeviceInfo)
