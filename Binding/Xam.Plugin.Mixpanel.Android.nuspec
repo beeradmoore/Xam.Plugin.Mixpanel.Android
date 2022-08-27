@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Xam.Plugin.Mixpanel.Android</id>
-        <version>6.4.0</version>
+        <version>6.5.1</version>
         <description>Xamarin.Android bindings for Mixpanel.</description>
         <tags>mixpanel, xamarin, xamarin.android, android</tags>
         <authors>beeradmoore</authors>
