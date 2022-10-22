@@ -104,11 +104,11 @@
     <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.4.2.1" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.5.1" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.6.1.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="Xam.Plugin.Mixpanel.Android">
-      <Version>7.0.1</Version>
+      <Version>7.2.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
