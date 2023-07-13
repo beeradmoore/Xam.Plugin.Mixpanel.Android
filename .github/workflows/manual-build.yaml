@@ -11,15 +11,15 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set default Xamarin SDK versions
       run: |
-        $VM_ASSETS/select-xamarin-sdk-v2.sh --android=13.0
+        $VM_ASSETS/select-xamarin-sdk-v2.sh --android=13.2
     
     - name: Update ndk location
       run: ln -sfn /Users/runner/Library/Android/sdk/ndk/22.1.7171670 /Users/runner/Library/Android/sdk/ndk-bundle
     
-    - name: Setup .NET Core SDK 5.0.x
+    - name: Setup .NET Core SDK 6.0.x
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '6.0.x'
 
     - name: Install dependencies
       run: nuget restore Binding/Xam.Plugin.Mixpanel.Android.sln
