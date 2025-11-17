@@ -9,3 +9,4 @@ obj/
 *.jar
 *.pom
 *.aar
+*.user

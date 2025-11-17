@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0-android35.0</TargetFramework>
-    <RuntimeIdentifiers>android-arm64;android-x64</RuntimeIdentifiers>
+    <TargetFramework>net9.0-android</TargetFramework>
+    <RuntimeIdentifiers>android-arm;android-x86;android-arm64;android-x64</RuntimeIdentifiers>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -14,10 +14,26 @@
       NOTE: you can simply add .aar or .jar files in this directory to be included in the project.
       To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
     -->
+
+    <!-- Nuget package -->
+    <PackageId>Xam.Plugin.Mixpanel.Android</PackageId>
+    <Version>8.2.4</Version>
+    <Description>Xamarin.Android bindings for Mixpanel.</Description>
+    <PackageTags>mixpanel, xamarin, xamarin.android, android</PackageTags>
+    <Authors>beeradmoore</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/beeradmoore/Xam.Plugin.Mixpanel.Android</PackageProjectUrl>
+
   </PropertyGroup>
   <ItemGroup>
     <!-- depdendencies from mixpanel-android.pom -->
     <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.8.2" />
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.13.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="">
+      <Link>LICENSE</Link>
+    </None>
   </ItemGroup>
 </Project>

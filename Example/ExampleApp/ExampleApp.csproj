@@ -14,4 +14,7 @@
     -->
     <TrimMode>full</TrimMode>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Mixpanel.Android" Version="8.2.4" />
+  </ItemGroup>
 </Project>

@@ -4,9 +4,11 @@ set -e
 
 #./FetchJars.sh
 
+rm -rf Xam.Plugin.Mixpanel.Android/bin
+rm -rf Xam.Plugin.Mixpanel.Android/obj
+
 dotnet pack \
     --configuration Release \
     --include-source \
     --include-symbols \
-    -p:NuspecFile="../Xam.Plugin.Mixpanel.Android.nuspec" \
     "Xam.Plugin.Mixpanel.Android/Xam.Plugin.Mixpanel.Android.csproj"

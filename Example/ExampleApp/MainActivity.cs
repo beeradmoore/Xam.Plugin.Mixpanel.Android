@@ -1,4 +1,5 @@
 using System.Text;
+using Xam.Plugin.Mixpanel.Android.MPMetrics;
 
 namespace ExampleApp;
 
