@@ -1,4 +1,12 @@
 #!/bin/sh
-./FetchJars.sh
-msbuild Xam.Plugin.Mixpanel.Android.csproj -property:Configuration=Release -target:Clean,Build
-nuget pack Xam.Plugin.Mixpanel.Android.nuspec -Symbols -SymbolPackageFormat snupkg
+
+set -e 
+
+#./FetchJars.sh
+
+dotnet pack \
+    --configuration Release \
+    --include-source \
+    --include-symbols \
+    -p:NuspecFile="../Xam.Plugin.Mixpanel.Android.nuspec" \
+    "Xam.Plugin.Mixpanel.Android/Xam.Plugin.Mixpanel.Android.csproj"

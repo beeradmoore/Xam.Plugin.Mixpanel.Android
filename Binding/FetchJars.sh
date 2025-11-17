@@ -1,14 +1,18 @@
 #!/bin/sh
 
-MIXPANEL_VERSION=7.3.2
+set -e
 
-rm -f  Jars/mixpanel-android.aar 
-rm -f  Jars/mixpanel-android-javadoc.jar 
-rm -f  Jars/mixpanel-android-sources.jar 
+MIXPANEL_VERSION=8.2.4
 
-curl -L -o Jars/mixpanel-android.aar "https://search.maven.org/remotecontent?filepath=com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}.aar"
-curl -L -o Jars/mixpanel-android-javadoc.jar "https://search.maven.org/remotecontent?filepath=com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}-javadoc.jar"
-curl -L -o Jars/mixpanel-android-sources.jar "https://search.maven.org/remotecontent?filepath=com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}-sources.jar"
+rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android.aar
+rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android.pom
+rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android-javadoc.jar
+rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android-sources.jar
+
+curl -L -o Xam.Plugin.Mixpanel.Android/mixpanel-android.aar "https://repo1.maven.org/maven2/com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}.aar"
+curl -L -o Xam.Plugin.Mixpanel.Android/mixpanel-android.pom "https://repo1.maven.org/maven2/com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}.pom"
+curl -L -o Xam.Plugin.Mixpanel.Android/mixpanel-android-javadoc.jar "https://repo1.maven.org/maven2/com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}-javadoc.jar"
+curl -L -o Xam.Plugin.Mixpanel.Android/mixpanel-android-sources.jar "https://repo1.maven.org/maven2/com/mixpanel/android/mixpanel-android/${MIXPANEL_VERSION}/mixpanel-android-${MIXPANEL_VERSION}-sources.jar"
 
 #rm -rf JavaDocs
 #mkdir JavaDocs
