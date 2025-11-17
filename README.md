@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v7.3.2.
+Xamarin.Android bindings for Mixpanel Android v8.2.4.
 
 
 ## Installation
@@ -18,15 +18,6 @@ using Xam.Plugin.Mixpanel.Android;
 ```
 
 And then follow the docs provided at the Mixpanel Developer Documentation (https://developer.mixpanel.com/docs/android)
-
-## Breaking Changes
-### v5.6.5
-The Xam.Plugin.Mixpanel.Android.Mpmetrcis namespace has been renamed to Xam.Plugin.Mixpanel.Android.MPMetrics.
-
-## Missing Builds
-### 5.9.2 + 5.9.3
-These builds are not present in this repo or on nuget as they would [crash](https://github.com/mixpanel/mixpanel-android/search?q=Lorg%2Fjacoco%2Fagent%2Frt%2Finternal_8ff85ea%2FOffline&type=issues) on launch. This was resolved in 5.9.4.
-
 ## Build
 
 ### Visutal Studio for Mac
@@ -45,7 +36,7 @@ These builds are not present in this repo or on nuget as they would [crash](http
 2. Fetch your Xam.Plugin.Mixpanel.Android.x.y.z.nupkg and Xam.Plugin.Mixpanel.Android.x.y.z.snupkg from the Binding directory.
 
 ### Adding JavaDocs
-FetchJars.sh will download the .aar file and .javadoc.jar files from [Maven](https://search.maven.org/search?q=a:mixpanel-android) and place/extract them in the suitable folders.
+FetchJars.sh will download the .aar file and .javadoc.jar files from [Maven](https://search.maven.org/search?q=a:mixpanel-android) and place them in the suitable folders.
 
 ## Updating Mixpanel SDK
 To update the Mixpanel SDK change the MIXPANEL_VERSION variable within FetchJars.sh to your desired SDK version and run build steps again.
