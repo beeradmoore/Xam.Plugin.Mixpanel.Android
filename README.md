@@ -21,7 +21,7 @@ using Xam.Plugin.Mixpanel.Android;
 And then follow the docs provided at the Mixpanel Developer Documentation (https://developer.mixpanel.com/docs/android)
 ## Build
 
-These build instructions are intended to be run on macOS. If you'd like to run them on Windows you need to open the `.sh` files and run equivilant commands for Windows.
+These build instructions are intended to be run on macOS. If you'd like to run them on Windows you need to open the `.sh` files and run equivalent commands for Windows.
 
 ### Local dll builds
 1. Navigate to the `Binding` directory
