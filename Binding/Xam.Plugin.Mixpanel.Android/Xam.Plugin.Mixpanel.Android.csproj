@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0-android</TargetFramework>
+    <TargetFramework>net10.0-android</TargetFramework>
     <RuntimeIdentifiers>android-arm;android-x86;android-arm64;android-x64</RuntimeIdentifiers>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
@@ -21,7 +21,7 @@
 
     <!-- Nuget package -->
     <PackageId>Xam.Plugin.Mixpanel.Android</PackageId>
-    <Version>8.2.4</Version>
+    <Version>8.3.0</Version>
     <Description>Xamarin.Android bindings for Mixpanel.</Description>
     <PackageTags>mixpanel, xamarin, xamarin.android, android</PackageTags>
     <Authors>beeradmoore</Authors>
@@ -40,4 +40,18 @@
       <Link>LICENSE</Link>
     </None>
   </ItemGroup>
+  <PropertyGroup>
+    <!--
+    Hides warning like 
+    Binding/Xam.Plugin.Mixpanel.Android/obj/Release/net10.0-android/generated/src/Xam.Plugin.Mixpanel.Android.MPMetrics.ResourceReader.cs(26,35): warning CS0108: 'ResourceReader.Drawables._members' hides inherited member 'ResourceReader._members'. Use the new keyword if hiding was intended.
+    -->
+    <NoWarn>$(NoWarn);CS0108</NoWarn>
+
+    
+    <!--
+    Hides warning like 
+    Binding/Xam.Plugin.Mixpanel.Android/obj/Release/net10.0-android/generated/src/Xam.Plugin.Mixpanel.Android.MPMetrics.MixpanelAPI.cs(2140,20): warning CS1572: XML comment has a param tag for 'flushBatchSize', but there is no parameter by that name
+    -->
+    <NoWarn>$(NoWarn);CS1572</NoWarn>
+  </PropertyGroup>
 </Project>

@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v8.2.4.
+Xamarin.Android bindings for Mixpanel Android v8.3.0.
 
 
 ## Installation
@@ -20,33 +20,33 @@ using Xam.Plugin.Mixpanel.Android;
 And then follow the docs provided at the Mixpanel Developer Documentation (https://developer.mixpanel.com/docs/android)
 ## Build
 
-### Visutal Studio for Mac
-1. Run FetchJars.sh 
-    ``` sh
-    $ ./FetchJars.sh
-    ```
-2. Open Xam.Plugin.Mixpanel.Android.sln
-3. Build and fetch your .dlls from the bin/ directory.
+These build instructions are intended to be run on macOS. If you'd like to run them on Windows you need to open the `.sh` files and run equivilant commands for Windows.
+
+### Local dll builds
+1. Navigate to the `Binding` directory
+2. Run `FetchJars.sh`
+3. Run `BuildDlls.sh`
+4. Fetch your `Xam.Plugin.Mixpanel.Android.dll` from the `Xam.Plugin.Mixpanel.Android/bin/Release/net10-android/` directory.
 
 ### Building a .nupkg
-1. Run BuildNugetPackage.sh
-    ``` sh
-    $ ./BuildNugetPackage.sh
-    ```
-2. Fetch your Xam.Plugin.Mixpanel.Android.x.y.z.nupkg and Xam.Plugin.Mixpanel.Android.x.y.z.snupkg from the Binding directory.
+1. Navigate to the `Binding` directory
+2. Run `FetchJars.sh`
+3. Run `BuildNugetPackage.sh`
+4. Fetch your `Xam.Plugin.Mixpanel.Android.x.y.z.nupkg` and `Xam.Plugin.Mixpanel.Android.x.y.z.snupkg` from the `Xam.Plugin.Mixpanel.Android/bin/Release/` directory.
 
 ### Adding JavaDocs
-FetchJars.sh will download the .aar file and .javadoc.jar files from [Maven](https://search.maven.org/search?q=a:mixpanel-android) and place them in the suitable folders.
+`FetchJars.sh` will download the `.aar` file and `.javadoc.jar` files from [Maven](https://search.maven.org/search?q=a:mixpanel-android) and place them in the suitable folders.
 
 ## Updating Mixpanel SDK
-To update the Mixpanel SDK change the MIXPANEL_VERSION variable within FetchJars.sh to your desired SDK version and run build steps again.
+To update the Mixpanel SDK change the `MIXPANEL_VERSION` variable within `FetchJars.sh` to your desired SDK version and run build steps again.
+
+To update the entire repository search for your old version number and replace it with the new version number.
 
 ## Requirements
-- [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
+The current nuget packages are built using the following config:
+* .NET SDK version 10.0.102 
+* Java SDK version 21.0.10
+* Android SDK Version 36
 
-## TODO
-* Try figure out how to reduce the number of warnings.
-* Figure out why the class MixpanelFCMMessagingService is missing.
-* Figure out how to get JavaDocs to work correctly. Should we include the relevant jars (already downloading with FetchJars.sh) with JavaDocJar and JavaSourceJar in the csproj. Should we continue using the JavaDocs folder like we currently do.
 
 Pull requests welcome!
