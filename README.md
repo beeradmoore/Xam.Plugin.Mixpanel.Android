@@ -2,6 +2,7 @@
 
 Xamarin.Android bindings for Mixpanel Android v8.3.0.
 
+This repository aims to target `net9.0-android` and `net10.0-android` which are currently the latest .NET Android STS and LTS releases. 
 
 ## Installation
 
