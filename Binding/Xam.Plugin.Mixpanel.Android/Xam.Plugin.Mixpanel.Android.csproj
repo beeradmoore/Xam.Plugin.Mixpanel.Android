@@ -10,7 +10,6 @@
       To learn more, see: https://learn.microsoft.com/dotnet/core/deploying/trimming/prepare-libraries-for-trimming
     -->
     <IsTrimmable>true</IsTrimmable>
-
     <!--
       NOTE: you can simply add .aar or .jar files in this directory to be included in the project.
       To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
@@ -28,7 +27,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/beeradmoore/Xam.Plugin.Mixpanel.Android</PackageProjectUrl>
-
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <!-- depdendencies from mixpanel-android.pom -->
@@ -36,18 +35,17 @@
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.13.1" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\LICENSE" Pack="true" PackagePath="">
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\">
       <Link>LICENSE</Link>
     </None>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <PropertyGroup>
     <!--
     Hides warning like 
     Binding/Xam.Plugin.Mixpanel.Android/obj/Release/net10.0-android/generated/src/Xam.Plugin.Mixpanel.Android.MPMetrics.ResourceReader.cs(26,35): warning CS0108: 'ResourceReader.Drawables._members' hides inherited member 'ResourceReader._members'. Use the new keyword if hiding was intended.
     -->
-    <NoWarn>$(NoWarn);CS0108</NoWarn>
-
-    
+    <NoWarn>$(NoWarn);CS0108</NoWarn>   
     <!--
     Hides warning like 
     Binding/Xam.Plugin.Mixpanel.Android/obj/Release/net10.0-android/generated/src/Xam.Plugin.Mixpanel.Android.MPMetrics.MixpanelAPI.cs(2140,20): warning CS1572: XML comment has a param tag for 'flushBatchSize', but there is no parameter by that name
