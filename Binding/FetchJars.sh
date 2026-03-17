@@ -2,7 +2,7 @@
 
 set -e
 
-MIXPANEL_VERSION=8.3.0
+MIXPANEL_VERSION=8.4.0
 
 rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android.aar
 rm -f Xam.Plugin.Mixpanel.Android/mixpanel-android.pom
