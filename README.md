@@ -1,6 +1,6 @@
 # Xam.Plugin.Mixpanel.Android
 
-Xamarin.Android bindings for Mixpanel Android v8.4.0.
+Xamarin.Android bindings for Mixpanel Android v8.5.0.
 
 This repository aims to target `net9.0-android` and `net10.0-android` which are currently the latest .NET Android STS and LTS releases. 
 
