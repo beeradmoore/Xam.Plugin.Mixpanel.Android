@@ -20,7 +20,7 @@
 
     <!-- Nuget package -->
     <PackageId>Xam.Plugin.Mixpanel.Android</PackageId>
-    <Version>8.5.1</Version>
+    <Version>8.5.2</Version>
     <Description>Xamarin.Android bindings for Mixpanel.</Description>
     <PackageTags>mixpanel, xamarin, xamarin.android, android</PackageTags>
     <Authors>beeradmoore</Authors>
